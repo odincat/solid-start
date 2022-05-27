@@ -4,6 +4,7 @@ import solidPlugin from 'vite-plugin-solid';
 import tsconfigPaths from 'vite-tsconfig-paths';
 import Pages from 'vite-plugin-pages';
 import AutoImport from 'unplugin-auto-import/vite';
+import { visualizer } from 'rollup-plugin-visualizer';
 
 export default defineConfig({
     plugins: [
@@ -11,13 +12,10 @@ export default defineConfig({
         tsconfigPaths(),
         Pages({
             dirs: 'src/pages',
-            importMode: 'async',
+            importMode: 'sync',
         }),
         AutoImport({
-            include: [
-                /\.[tj]sx?$/, // .ts, .tsx, .js, .jsx
-                /\.md$/, // .md
-            ],
+            include: [/\.[tj]sx?$/],
             dts: true,
             imports: [
                 'solid-js',
@@ -32,6 +30,7 @@ export default defineConfig({
                 },
             ],
         }),
+        visualizer(),
     ],
     build: {
         target: 'esnext',

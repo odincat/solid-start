@@ -22,3 +22,28 @@ DX:
 1. Run `pnpm prod:build`.
 2. (optional) Preview your production build using `pnpm prod:preview`
 If you dont want to waste your time just type `pnpm prod`. It will run both commands.
+
+If you want to view 
+
+## Packages
+This template uses:
+- [Solid](https://www.npmjs.com/package/solid-js)
+- [solid-meta](https://www.npmjs.com/package/solid-meta)
+- [solid-app-router](https://www.npmjs.com/package/solid-app-router)
+
+- [Vite](https://www.npmjs.com/package/vite)
+    - [rollup-plugin-visualizer](https://www.npmjs.com/package/rollup-plugin-visualizer)
+    - [unplugin-auto-import](https://www.npmjs.com/package/unplugin-auto-import)
+    - [vite-plugin-pages](https://www.npmjs.com/package/vite-plugin-pages)
+    - [vite-plugin-solid](https://www.npmjs.com/package/https://www.npmjs.com/package/vite-plugin-solid)
+    - [vite-tsconfig-paths](https://www.npmjs.com/package/https://www.npmjs.com/package/solid-js)
+
+- [Husky](https://www.npmjs.com/package/husky)
+- [lint-staged](https://www.npmjs.com/package/lint-staged)
+
+- [PostCSS](https://www.npmjs.com/package/postcss)
+    - [Tailwind](https://tailwindcss.com/)
+    - [Autoprefixer](https://www.npmjs.com/package/autoprefixer)
+- [Sass](https://sass-lang.com/)
+
+- [Typescript](https://www.typescriptlang.org/)
