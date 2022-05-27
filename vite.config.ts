@@ -27,6 +27,7 @@ export default defineConfig({
                         ['Title', 'MetaTitle'],
                         ['Meta', 'MetaTag'],
                         ['Link', 'MetaLink'],
+                        'MetaProvider',
                     ],
                 },
             ],

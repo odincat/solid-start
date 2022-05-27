@@ -1,13 +1,11 @@
-import { Link } from 'solid-app-router';
 import type { Component } from 'solid-js';
-import { Title } from 'solid-meta';
 
 import styles from '@styles/About.module.scss';
 
 const About: Component = () => {
     return (
         <div class="container">
-            <Title>About this site</Title>
+            <MetaTitle>About this site</MetaTitle>
             <h1 class="title">About</h1>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
