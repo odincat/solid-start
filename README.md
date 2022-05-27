@@ -15,7 +15,7 @@ DX:
 ## Getting started
 1. Install the dependencies using `pnpm install`.
 2. Generate the imports by starting the dev server using `pnpm dev`.
-3. Check `.edidorconfig` and `.prettierrc.json` and change them to fit your needs.
+3. Check `.editorconfig` and `.prettierrc.json` and change them to fit your needs.
 3. Enjoy developing a *solid* application!
 
 ## Building
