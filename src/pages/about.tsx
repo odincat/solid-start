@@ -1,8 +1,8 @@
-import type { Component } from 'solid-js';
+import { SolidComponent } from '@lib/types';
 
 import styles from '@styles/About.module.scss';
 
-const About: Component = () => {
+const About: SolidComponent = () => {
     return (
         <div class="container">
             <MetaTitle>About this site</MetaTitle>

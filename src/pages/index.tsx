@@ -1,6 +1,6 @@
-import type { Component } from 'solid-js';
+import { SolidComponent } from '@lib/types';
 
-const App: Component = () => {
+const App: SolidComponent = () => {
     return (
         <div class="container">
             <MetaTitle>Home</MetaTitle>
