@@ -1,19 +1,25 @@
 /* @refresh reload */
 import '@styles/globals.scss';
-import routes from '~solid-pages';
+
+const routes = createRouterTree([
+    {
+        path: '/',
+        component: lazy<any>(() => import('@pages/index')),
+    },
+    {
+        path: '/about',
+        component: lazy(() => import('@pages/about')),
+    },
+]);
 
 render(() => {
-    const Routes = useRoutes(routes);
-
     return (
         <>
-            <Router>
-                <MetaProvider>
-                    <Suspense>
-                        <Routes />
-                    </Suspense>
-                </MetaProvider>
-            </Router>
+            <MetaProvider>
+                <Suspense>
+                    <Router routes={routes} />
+                </Suspense>
+            </MetaProvider>
         </>
     );
 }, document.getElementById('root') as HTMLElement);
